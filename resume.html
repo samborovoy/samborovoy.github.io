@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Experience — Samuel Borovoy</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400;1,700&family=Space+Mono:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<div class="c-dot"  id="cursor-dot"></div>
+<div class="c-ring" id="cursor-ring"></div>
+<div id="scroll-bar"></div>
+
+<canvas id="bg-canvas"></canvas>
+
+<nav>
+  <a href="index.html" class="nav-logo">Sam Borovoy</a>
+  <ul class="nav-links">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="about.html">About</a></li>
+    <li><a href="research.html">Research</a></li>
+    <li><a href="resume.html" class="active">Experience</a></li>
+    <li><a href="activities.html">Activities</a></li>
+  </ul>
+</nav>
+
+<div class="page">
+  <div class="section">
+
+    <!-- Header -->
+    <div class="resume-header" data-reveal>
+      <h1 class="page-heading">
+        Experience &amp;<br>
+        <span class="ital">Skills.</span>
+      </h1>
+      <a class="resume-download" href="Sam-Borovoy-BFI-Resume.pdf" download>
+        <svg width="13" height="13" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+          <path d="M12 16l-6-6h4V4h4v6h4l-6 6zm-7 4v-2h14v2H5z"/>
+        </svg>
+        Download CV
+      </a>
+    </div>
+
+    <!-- Education -->
+    <div class="resume-sec" data-reveal>
+      <div class="resume-sec-head">Education</div>
+      <div class="edu-block">
+        <div>
+          <div class="edu-school">Bowdoin College</div>
+          <div class="edu-degree">B.A. in Mathematics &amp; Computer Science — GPA 3.8 / 4.0</div>
+          <ul class="edu-bullets">
+            <li><strong style="color:var(--cream)">Coursework:</strong> Machine Learning, NLP for AI, Financial Machine Learning, Bayesian Statistics, Advanced Statistics, Algorithms, Advanced Data Science, Microeconomic Theory</li>
+            <li><strong style="color:var(--cream)">Awards:</strong> Faculty Scholar, National Merit Scholar</li>
+          </ul>
+        </div>
+        <div class="edu-dates">Sep 2022 – May 2026<br>Brunswick, Maine</div>
+      </div>
+    </div>
+
+    <!-- Work Experience — all in the same block format -->
+    <div class="resume-sec" data-reveal>
+      <div class="resume-sec-head">Work Experience</div>
+
+      <div class="exp-block">
+        <div class="exp-row">
+          <div class="exp-company">Senior Honors Thesis</div>
+          <div class="exp-dates">Aug 2025 – Present · Brunswick, ME</div>
+        </div>
+        <div class="exp-role">Independent ML Researcher — Bowdoin College</div>
+        <ul class="exp-bullets">
+          <li>Conducting theoretical research on LLM interpretability and calibration, supervised by the Chair of the Bowdoin Mathematics Department</li>
+          <li>Developing a weights-based mechanistic account of how token frequency geometry drives transformer calibration across the GPT-2 family</li>
+          <li>Applying theoretical insights to design a scalable AI music recommendation system for 50M+ SoundCloud users</li>
+        </ul>
+      </div>
+
+      <div class="exp-block">
+        <div class="exp-row">
+          <div class="exp-company">SoundCloud</div>
+          <div class="exp-dates">Jun 2025 – Aug 2025 · New York, NY</div>
+        </div>
+        <div class="exp-role">Data Analyst Intern</div>
+        <ul class="exp-bullets">
+          <li>Scoped, designed, and executed a large-scale analysis of anonymous user behaviors, resulting in <strong style="color:var(--cream)">$500K+ in projected annual royalty cost savings</strong></li>
+          <li>Unified and analyzed <strong style="color:var(--cream)">1 Trillion+ previously siloed data points</strong> using SQL and Python, applying statistical methods, XGBoost, and SHAP values to identify anomalies and drivers of user engagement</li>
+          <li>Delivered findings through an analytical report and presentation to a nontechnical audience, translating data insights into actionable product and business recommendations</li>
+        </ul>
+      </div>
+
+      <div class="exp-block">
+        <div class="exp-row">
+          <div class="exp-company">Recidiviz</div>
+          <div class="exp-dates">Jun 2024 – Aug 2024 · New York, NY</div>
+        </div>
+        <div class="exp-role">Data Analyst Intern</div>
+        <ul class="exp-bullets">
+          <li>Performed exploratory research using Python (Pandas, NumPy, Matplotlib) and SQL to extract novel insights from over <strong style="color:var(--cream)">1 million complex government data points</strong> that helped drive U.S. state criminal justice policy decisions</li>
+          <li>Designed end-to-end data pipelines for newly ingested government data, conducting rigorous validation through cross-referencing techniques</li>
+          <li>Created polished analytical deliverables with data visualizations to support decision-making for government clients</li>
+        </ul>
+      </div>
+
+      <div class="exp-block">
+        <div class="exp-row">
+          <div class="exp-company">Tenna LLC</div>
+          <div class="exp-dates">Jun 2023 – Aug 2023 · New Brunswick, NJ</div>
+        </div>
+        <div class="exp-role">Product Intern</div>
+        <ul class="exp-bullets">
+          <li>Investigated undocumented product functionality through JavaScript code review, edge case testing, and cross-team collaboration to create <strong style="color:var(--cream)">500+ reproducible product requirements</strong> for the engineering team</li>
+        </ul>
+      </div>
+
+    </div><!-- /.resume-sec -->
+
+    <!-- Technical Skills -->
+    <div class="resume-sec" data-reveal>
+      <div class="resume-sec-head">Technical Skills</div>
+      <div class="skills-bars">
+        <div class="skill-block">
+          <div class="sb-name">Python</div>
+          <div class="sb-track"><div class="sb-bar" data-w="96%"></div></div>
+          <div class="sb-label">3+ years · primary language</div>
+        </div>
+        <div class="skill-block">
+          <div class="sb-name">SQL / BigQuery</div>
+          <div class="sb-track"><div class="sb-bar" data-w="90%"></div></div>
+          <div class="sb-label">production experience · 1T+ rows</div>
+        </div>
+        <div class="skill-block">
+          <div class="sb-name">Machine Learning</div>
+          <div class="sb-track"><div class="sb-bar" data-w="88%"></div></div>
+          <div class="sb-label">XGBoost · NLP · Deep RL · TS</div>
+        </div>
+        <div class="skill-block">
+          <div class="sb-name">PyTorch / TensorFlow</div>
+          <div class="sb-track"><div class="sb-bar" data-w="84%"></div></div>
+          <div class="sb-label">custom training loops · DDQN</div>
+        </div>
+        <div class="skill-block">
+          <div class="sb-name">R</div>
+          <div class="sb-track"><div class="sb-bar" data-w="78%"></div></div>
+          <div class="sb-label">Bayesian stats · coursework</div>
+        </div>
+        <div class="skill-block">
+          <div class="sb-name">Data &amp; Visualization</div>
+          <div class="sb-track"><div class="sb-bar" data-w="86%"></div></div>
+          <div class="sb-label">Pandas · NumPy · Tableau · Looker</div>
+        </div>
+        <div class="skill-block">
+          <div class="sb-name">Cloud / Infra</div>
+          <div class="sb-track"><div class="sb-bar" data-w="72%"></div></div>
+          <div class="sb-label">GCP · Azure · PostgreSQL · Git</div>
+        </div>
+        <div class="skill-block">
+          <div class="sb-name">Java</div>
+          <div class="sb-track"><div class="sb-bar" data-w="64%"></div></div>
+          <div class="sb-label">data structures · software design</div>
+        </div>
+        <div class="skill-block">
+          <div class="sb-name">JavaScript</div>
+          <div class="sb-track"><div class="sb-bar" data-w="58%"></div></div>
+          <div class="sb-label">product &amp; web development</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Certificates -->
+    <div class="resume-sec" data-reveal>
+      <div class="resume-sec-head">Certificates</div>
+      <div class="cert-list">
+        <span class="cert-tag">Machine Learning — Stanford (Coursera)</span>
+        <span class="cert-tag">Google Data Analytics</span>
+        <span class="cert-tag">NoSQL Essential Training</span>
+        <span class="cert-tag">Azure OpenAI</span>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<footer>
+  <span class="footer-name">Samuel Borovoy</span>
+  <span class="footer-copy">© 2026</span>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/three@0.134.0/build/three.min.js"></script>
+<script src="js/three-bg.js"></script>
+<script src="js/interactions.js"></script>
+</body>
+</html>

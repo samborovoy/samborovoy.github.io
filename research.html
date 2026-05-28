@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Research &amp; Projects — Samuel Borovoy</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400;1,700&family=Space+Mono:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<div class="c-dot"  id="cursor-dot"></div>
+<div class="c-ring" id="cursor-ring"></div>
+<div id="scroll-bar"></div>
+
+<canvas id="bg-canvas"></canvas>
+
+<nav>
+  <a href="index.html" class="nav-logo">Sam Borovoy</a>
+  <ul class="nav-links">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="about.html">About</a></li>
+    <li><a href="research.html" class="active">Research</a></li>
+    <li><a href="resume.html">Experience</a></li>
+    <li><a href="activities.html">Activities</a></li>
+  </ul>
+</nav>
+
+<div class="page">
+  <div class="section">
+
+    <div class="research-hero" data-reveal>
+      <div class="section-label">Research &amp; Projects</div>
+      <h1 class="page-heading">Selected<br><span class="ital">Works.</span></h1>
+    </div>
+
+    <div class="projects-grid">
+
+      <!-- 01: Senior Thesis -->
+      <div class="project-card" data-modal="modal-1" tabindex="0" role="button"
+           aria-label="Open project: Calibration Properties of Transformer Models">
+        <div class="project-img-wrap">
+          <img src="senior-thesis-coverimage.png"
+               alt="Row norm vs token frequency — GPT-2" loading="lazy">
+        </div>
+        <div class="project-meta">
+          <div class="project-number">01 &nbsp;—&nbsp; Senior Thesis &nbsp;·&nbsp; 2025–2026</div>
+          <h2 class="project-title">A Mechanistic Approach to Understanding the Calibration Properties of Transformer Models</h2>
+          <p class="project-excerpt">A weights-based mechanistic account of calibration in transformer LLMs, arguing that calibration is substantially a geometric artifact of how token frequency is encoded through the unembedding matrix.</p>
+        </div>
+        <div class="project-arrow">↗</div>
+      </div>
+
+      <!-- 02: Superposition -->
+      <div class="project-card" data-modal="modal-2" tabindex="0" role="button"
+           aria-label="Open project: Neural Network Interpretability — Superposition">
+        <div class="project-img-wrap">
+          <img src="superposition-coverimage.png"
+               alt="Superposition feature geometry visualization" loading="lazy">
+        </div>
+        <div class="project-meta">
+          <div class="project-number">02 &nbsp;—&nbsp; ML Research &nbsp;·&nbsp; 2024</div>
+          <h2 class="project-title">Neural Network Interpretability: Superposition</h2>
+          <p class="project-excerpt">Exploring polysemanticity and superposition in neural networks — how models represent more features than neurons, and the interpretability challenges this creates.</p>
+        </div>
+        <div class="project-arrow">↗</div>
+      </div>
+
+      <!-- 03: Polymarket -->
+      <div class="project-card" data-modal="modal-3" tabindex="0" role="button"
+           aria-label="Open project: Polymarket Insider Trading Detection">
+        <div class="project-img-wrap">
+          <img src="lstm-scatter-pmx.png"
+               alt="Model vs market — contrarian bets scatter plot" loading="lazy">
+        </div>
+        <div class="project-meta">
+          <div class="project-number">03 &nbsp;—&nbsp; Financial ML &nbsp;·&nbsp; 2024</div>
+          <h2 class="project-title">Polymarket Insider Trading Detection</h2>
+          <p class="project-excerpt">Isolation Forest + LSTM models trained on CLOB data to detect anomalous Polymarket transactions — organically discovering the profitability of contrarian "No" positions.</p>
+        </div>
+        <div class="project-arrow">↗</div>
+      </div>
+
+      <!-- 04: DDQN — now with book-1.png cover -->
+      <div class="project-card" data-modal="modal-4" tabindex="0" role="button"
+           aria-label="Open project: Double Deep-Q RL Trading Agent">
+        <div class="project-img-wrap">
+          <img src="book-1.png"
+               alt="HFT price chart showing multi-strategy price paths" loading="lazy">
+        </div>
+        <div class="project-meta">
+          <div class="project-number">04 &nbsp;—&nbsp; Deep RL &nbsp;·&nbsp; 2024</div>
+          <h2 class="project-title">Double Deep-Q Autonomous RL Trading Agent</h2>
+          <p class="project-excerpt">A custom PyTorch DDQN trading agent for the minabides HFT simulation. Evaluates a 6-dimensional state space from a 30-step price history queue to optimize net portfolio growth.</p>
+        </div>
+        <div class="project-arrow">↗</div>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+<footer>
+  <span class="footer-name">Samuel Borovoy</span>
+  <span class="footer-copy">© 2026</span>
+</footer>
+
+<!-- ═══════════ MODALS ═══════════ -->
+<div id="modal-overlay" class="modal-overlay" role="dialog" aria-modal="true">
+
+  <!-- Modal 1: Thesis -->
+  <div id="modal-1" class="modal" hidden>
+    <button class="modal-close" aria-label="Close">✕</button>
+    <div class="modal-tag">Senior Thesis &nbsp;·&nbsp; Mechanistic Interpretability &nbsp;·&nbsp; 2025–2026</div>
+    <h2 class="modal-title">A Mechanistic Approach to Understanding the Calibration Properties of Transformer Models</h2>
+    <img class="modal-img" src="relcalibration.png"
+         alt="Reliability calibration plots for GPT-2 and GPT-2-medium">
+    <p class="modal-desc">
+      A model is calibrated when its stated confidence matches its empirical accuracy. The calibration properties of transformer models remain poorly understood at a theoretical level, and the empirical literature is fragmented on the circumstances under which calibration transpires.
+      <br><br>
+      This paper presents a weights-based mechanistic account of calibration in transformer language models, arguing that a substantial fraction of calibration is a geometric artifact of how token frequency is encoded through the unembedding matrix. We identify the token-mean direction µ of the unembedding matrix as the anti-frequency token axis across the GPT-2 transformer family. The first principal component of the centered unembedding encodes what we term the <em>Zipfian shortcut</em> — a learned mechanism that boosts common tokens regardless of context, which is causally verified through ablation experiments.
+      <br><br>
+      We further show that the encoding strategy shifts with scale: smaller models concentrate frequency information in a small number of components, while larger models distribute it across many layers. Together these findings reconcile previously contradictory observations in the calibration literature.
+    </p>
+    <div class="modal-actions">
+      <a class="modal-link"
+         href="https://github.com/samborovoy/Transformer-Calibration-Geometry/blob/main/thesis-mechinterp.pdf"
+         target="_blank" rel="noopener">↗ &nbsp;Read Full Thesis</a>
+    </div>
+  </div>
+
+  <!-- Modal 2: Superposition -->
+  <div id="modal-2" class="modal" hidden>
+    <button class="modal-close" aria-label="Close">✕</button>
+    <div class="modal-tag">ML Research &nbsp;·&nbsp; Interpretability &nbsp;·&nbsp; 2024</div>
+    <h2 class="modal-title">Neural Network Interpretability: Superposition</h2>
+    <img class="modal-img" src="superposheatmap.png"
+         alt="Superposition heatmap showing polysemantic neuron behavior">
+    <p class="modal-desc">
+      This paper explores the phenomena of superposition and polysemanticity in neural networks, which complicate the interpretability of how features are represented in the model. I investigate the behavior of features in the activation space of neural networks, particularly within the MLP blocks of a Transformer.
+      <br><br>
+      Features are often represented by combinations of activations across multiple neurons, making it difficult to disentangle individual features. Superposition enables neural networks to represent more features than the number of neurons, showcasing one of their greatest strengths. However, this comes at the expense of interpretability, often leading them to be viewed as "black boxes."
+      <br><br>
+      The experiments in this paper reveal that as input sparsity increases, the nonlinear model begins to represent more features than its dimensionality, leading to polysemantic behavior where neurons encode multiple features.
+    </p>
+    <div class="modal-actions">
+      <a class="modal-link"
+         href="https://github.com/samborovoy/Neural-Network-Superposition/blob/main/FINAL_ML_PAPER.pdf"
+         target="_blank" rel="noopener">↗ &nbsp;Read Paper</a>
+    </div>
+  </div>
+
+  <!-- Modal 3: Polymarket -->
+  <div id="modal-3" class="modal" hidden>
+    <button class="modal-close" aria-label="Close">✕</button>
+    <div class="modal-tag">Financial ML &nbsp;·&nbsp; Anomaly Detection &nbsp;·&nbsp; 2024</div>
+    <h2 class="modal-title">Polymarket Insider Trading Detection</h2>
+    <img class="modal-img" src="FML_Polymarket-update-1.png"
+         alt="Polymarket insider trading analysis results">
+    <p class="modal-desc">
+      Motivated by reports of suspicious trading activity on Polymarket surrounding major events — such as the Maduro raid, Nobel Prize announcements, and the Iran attacks — this project aimed to detect potential insider trading and leverage those signals for a high-alpha trading strategy.
+      <br><br>
+      Using market-level and Central Limit Order Book (CLOB) data from the Polymarket API, we developed an Isolation Forest classifier and an LSTM neural network. These models successfully identified anomalous transactions and generated profitable strategies within the earnings and political markets.
+      <br><br>
+      A key insight generated by our model was the profitability of taking contrarian "No" positions on market resolutions. This organically learned strategy directly corroborates a
+      <a href="https://www.wsj.com/finance/investing/polymarket-kalshi-betting-profits-prediction-markets-eb23ac11"
+         target="_blank" rel="noopener"
+         style="color:var(--gold);text-decoration:underline;text-underline-offset:3px">
+        Wall Street Journal analysis
+      </a>
+      highlighting that prediction market traders possess a bias toward overvaluing "Yes" bets.
+    </p>
+    <div class="modal-actions">
+      <a class="modal-link"
+         href="https://github.com/charlie-apolseed/polymarket-insider-predictor/tree/main"
+         target="_blank" rel="noopener">↗ &nbsp;GitHub Repository</a>
+      <a class="modal-link" href="FML_Polymarket-update.pdf" target="_blank" rel="noopener">
+        ↓ &nbsp;Download Paper (PDF)
+      </a>
+    </div>
+  </div>
+
+  <!-- Modal 4: DDQN -->
+  <div id="modal-4" class="modal" hidden>
+    <button class="modal-close" aria-label="Close">✕</button>
+    <div class="modal-tag">Deep Reinforcement Learning &nbsp;·&nbsp; HFT &nbsp;·&nbsp; PyTorch &nbsp;·&nbsp; 2024</div>
+    <h2 class="modal-title">Double Deep-Q Autonomous RL Trading Agent</h2>
+    <img class="modal-img" src="ddqn.png"
+         alt="DDQN architecture: Q-Network, Target Q-Network, Replay Memory, Environment">
+    <p class="modal-desc">
+      An autonomous reinforcement learning agent built for the minabides high-frequency trading (HFT) simulation environment. Originally developed as an academic project, this custom PyTorch implementation utilizes a Double Deep Q-Network to execute optimal trading strategies (Buy, Hold, Sell).
+      <br><br>
+      The agent evaluates a complex 6-dimensional state space — including Bollinger Bands, LOB imbalance, and microprice deviation — derived from a 30-step price history queue. By decoupling action selection and evaluation through a Target Network, and utilizing a reward function that penalizes basis point transaction costs, the model successfully stabilizes training and optimizes for net portfolio growth over time.
+    </p>
+    <div class="modal-actions">
+      <a class="modal-link"
+         href="https://github.com/samborovoy/Double-DeepQ-HFT-Agent"
+         target="_blank" rel="noopener">↗ &nbsp;GitHub Repository</a>
+    </div>
+  </div>
+
+</div><!-- /#modal-overlay -->
+
+<script src="https://cdn.jsdelivr.net/npm/three@0.134.0/build/three.min.js"></script>
+<script src="js/three-bg.js"></script>
+<script src="js/interactions.js"></script>
+</body>
+</html>

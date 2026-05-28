@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Activities — Samuel Borovoy</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400;1,700&family=Space+Mono:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<div class="c-dot"  id="cursor-dot"></div>
+<div class="c-ring" id="cursor-ring"></div>
+<div id="scroll-bar"></div>
+
+<canvas id="bg-canvas"></canvas>
+
+<nav>
+  <a href="index.html" class="nav-logo">Sam Borovoy</a>
+  <ul class="nav-links">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="about.html">About</a></li>
+    <li><a href="research.html">Research</a></li>
+    <li><a href="resume.html">Experience</a></li>
+    <li><a href="activities.html" class="active">Activities</a></li>
+  </ul>
+</nav>
+
+<div class="page">
+  <div class="section">
+
+    <div data-reveal style="margin-bottom:64px">
+      <div class="section-label">Leadership &amp; Volunteering</div>
+      <h1 class="page-heading">Activities &amp;<br><span class="ital">Community.</span></h1>
+    </div>
+
+    <!-- ── Club Basketball ──────────────────────────────────── -->
+    <div class="activity-block" data-reveal>
+      <div class="activity-text">
+        <div class="activity-label">Leadership &nbsp;·&nbsp; Dec 2023 – Present</div>
+        <h2 class="activity-title">Club Basketball</h2>
+        <div class="activity-role">Co-Founder &amp; Captain — Bowdoin College</div>
+        <p class="activity-desc">
+          I led 1+ year-long negotiations with the college administration over insurance contracts and court space availability to get the club basketball team officially chartered. In the two years since, I've worked hard to establish a warm, loving team culture that brings in people from all over campus.
+          <br><br>
+          I enrolled our club in a national league, built out team cultural norms and practice routines, gameday strategies and tactics, and improved our administrative relationship to ensure this club survives my Bowdoin tenure. I've left the club in good hands, and I hope it continues to serve as a warm, open community to hoopers all over campus!
+        </p>
+      </div>
+      <div class="activity-media">
+        <div class="photo-grid pg-3">
+          <div class="pg-photo pg-main">
+            <img src="clubball.jpg" alt="Club basketball team at Bowdoin College" loading="lazy">
+          </div>
+          <div class="pg-photo pg-side">
+            <img src="cbball.JPG" alt="Club basketball — game action" loading="lazy">
+          </div>
+          <div class="pg-photo pg-side">
+            <img src="clubhoops.JPG" alt="Club basketball — team practice" loading="lazy">
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ── Common Good Grant Committee ─────────────────────── -->
+    <div class="activity-block flip" data-reveal>
+      <div class="activity-media">
+        <div class="photo-single">
+          <img src="commongood.jpg"
+               alt="Common Good Grant — 25 Years of Impact, Midcoast Maine map"
+               loading="lazy">
+        </div>
+      </div>
+      <div class="activity-text">
+        <div class="activity-label">Philanthropy &nbsp;·&nbsp; Sep 2023 – Jun 2024</div>
+        <h2 class="activity-title">Common Good Grant Committee</h2>
+        <div class="activity-role">Committee Member — Bowdoin College</div>
+        <p class="activity-desc">
+          I served on this committee my sophomore year of college, helping fundraise $30,000 and review grant applications from nonprofits in the Midcoast Maine area. I made a site visit out to Lewiston to listen to a group of Somalian women who were working on a support and community network in Lewiston talk about the financial challenges they were facing.
+          <br><br>
+          I managed to convince and advocate to the committee — under significant resistance — that this was one of the most worthy causes we reviewed. It's one of the moments in my life where I'm most proud of the outcome I advocated for.
+        </p>
+      </div>
+    </div>
+
+    <!-- ── Big Brothers Big Sisters ────────────────────────── -->
+    <div class="activity-block" data-reveal>
+      <div class="activity-text">
+        <div class="activity-label">Mentorship &nbsp;·&nbsp; Mar 2023 – Present</div>
+        <h2 class="activity-title">Big Brothers Big Sisters</h2>
+        <div class="activity-role">Volunteer — Topsham, Maine</div>
+        <p class="activity-desc">
+          I spent two years making weekly visits to the local elementary school in Topsham, Maine. My "little brother" and I fostered a close relationship, and I tried to serve as the best role model I could in my interactions with his peers and teachers.
+          <br><br>
+          I'll miss hanging out at recess with those kids — but I certainly won't miss the contentious role of referee in 4-square. Ever again.
+        </p>
+      </div>
+      <div class="activity-media">
+        <div class="logo-display">
+          <img src="Big_Brothers_Big_Sisters_of_America_logo.png"
+               alt="Big Brothers Big Sisters of America logo" loading="lazy">
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<footer>
+  <span class="footer-name">Samuel Borovoy</span>
+  <span class="footer-copy">© 2026</span>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/three@0.134.0/build/three.min.js"></script>
+<script src="js/three-bg.js"></script>
+<script src="js/interactions.js"></script>
+</body>
+</html>

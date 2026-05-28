@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About — Samuel Borovoy</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400;1,700&family=Space+Mono:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<div class="c-dot"  id="cursor-dot"></div>
+<div class="c-ring" id="cursor-ring"></div>
+<div id="scroll-bar"></div>
+
+<canvas id="bg-canvas"></canvas>
+
+<nav>
+  <a href="index.html" class="nav-logo">Sam Borovoy</a>
+  <ul class="nav-links">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="about.html" class="active">About</a></li>
+    <li><a href="research.html">Research</a></li>
+    <li><a href="resume.html">Experience</a></li>
+    <li><a href="activities.html">Activities</a></li>
+  </ul>
+</nav>
+
+<div class="page">
+  <div class="section">
+    <div class="about-grid">
+
+      <aside class="about-sidebar">
+        <h1 class="about-heading">
+          About<br>
+          <span class="ital">Me.</span>
+        </h1>
+        <div class="about-sidebar-meta">
+          <div class="detail-item">
+            <div class="detail-label">Status</div>
+            <div class="detail-value">Recent Graduate</div>
+          </div>
+          <div class="detail-item">
+            <div class="detail-label">Education</div>
+            <div class="detail-value">Bowdoin College<br>B.A. Math &amp; CS · GPA 3.8</div>
+          </div>
+          <div class="detail-item">
+            <div class="detail-label">Location</div>
+            <div class="detail-value">New York, NY</div>
+          </div>
+          <div class="detail-item">
+            <div class="detail-label">Focus Areas</div>
+            <div class="detail-value">Mech. Interpretability<br>AI Safety<br>Data Science for Social Good</div>
+          </div>
+          <div class="detail-item">
+            <div class="detail-label">Awards</div>
+            <div class="detail-value">Faculty Scholar<br>National Merit Scholar</div>
+          </div>
+        </div>
+      </aside>
+
+      <div class="about-content">
+        <div class="section-label">Bio</div>
+        <p class="about-bio" data-reveal>
+          I'm a recent <strong>Math+CS graduate from Bowdoin College</strong> and am passionate about the question of how the world can use AI and data science for social good. I've stayed on the frontier through coursework, internships, and personal projects — like my <strong>senior honors project on using mechanistic interpretability methods to analyze LLMs from a geometric weights-based perspective</strong>. I have <strong>3+ years of experience</strong> with Python, SQL, ML, R, and other skills through coursework and internship experience. I'm looking for roles that apply data science, ML, and AI for social good.
+        </p>
+
+        <div class="section-label" style="margin-top:48px" data-reveal>Relevant Coursework</div>
+        <div class="coursework-tags" data-reveal>
+          <span class="skill-tag">Machine Learning</span>
+          <span class="skill-tag">NLP for AI</span>
+          <span class="skill-tag">Financial Machine Learning</span>
+          <span class="skill-tag">Bayesian Statistics</span>
+          <span class="skill-tag">Advanced Statistics</span>
+          <span class="skill-tag">Probability</span>
+          <span class="skill-tag">Data Structures</span>
+          <span class="skill-tag">Algorithms</span>
+          <span class="skill-tag">Software Design</span>
+          <span class="skill-tag">Advanced Data Science</span>
+          <span class="skill-tag">Microeconomic Theory</span>
+        </div>
+
+        <div class="section-label" style="margin-top:48px" data-reveal>Technical Skills</div>
+        <div class="skills-grid" data-reveal>
+          <div class="skill-category">
+            <h4>Languages</h4>
+            <div class="skill-tags">
+              <span class="skill-tag">Python</span>
+              <span class="skill-tag">SQL</span>
+              <span class="skill-tag">R</span>
+              <span class="skill-tag">Java</span>
+              <span class="skill-tag">JavaScript</span>
+            </div>
+          </div>
+          <div class="skill-category">
+            <h4>ML / Deep Learning</h4>
+            <div class="skill-tags">
+              <span class="skill-tag">PyTorch</span>
+              <span class="skill-tag">TensorFlow</span>
+              <span class="skill-tag">Deep RL</span>
+              <span class="skill-tag">NLP</span>
+              <span class="skill-tag">XGBoost</span>
+              <span class="skill-tag">Time Series</span>
+            </div>
+          </div>
+          <div class="skill-category">
+            <h4>Data &amp; Analytics</h4>
+            <div class="skill-tags">
+              <span class="skill-tag">Pandas</span>
+              <span class="skill-tag">NumPy</span>
+              <span class="skill-tag">Matplotlib</span>
+              <span class="skill-tag">SHAP</span>
+              <span class="skill-tag">Tableau</span>
+              <span class="skill-tag">Looker</span>
+            </div>
+          </div>
+          <div class="skill-category">
+            <h4>Cloud / Infra</h4>
+            <div class="skill-tags">
+              <span class="skill-tag">BigQuery</span>
+              <span class="skill-tag">GCP</span>
+              <span class="skill-tag">Azure</span>
+              <span class="skill-tag">PostgreSQL</span>
+              <span class="skill-tag">Git</span>
+              <span class="skill-tag">Cursor</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="section-label" style="margin-top:48px" data-reveal>Interests</div>
+        <div class="skill-tags" style="margin-top:14px" data-reveal>
+          <span class="skill-tag">AI Safety</span>
+          <span class="skill-tag">Criminal Justice</span>
+          <span class="skill-tag">Public Health</span>
+          <span class="skill-tag">Public Policy</span>
+          <span class="skill-tag">Economic Development</span>
+          <span class="skill-tag">Soccer</span>
+          <span class="skill-tag">Cooking</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<footer>
+  <span class="footer-name">Samuel Borovoy</span>
+  <span class="footer-copy">© 2026</span>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/three@0.134.0/build/three.min.js"></script>
+<script src="js/three-bg.js"></script>
+<script src="js/interactions.js"></script>
+</body>
+</html>
